@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Calculator from "./components/Calculator";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <section className="section_div">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-lg-4">
+              <Calculator />
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer className="footer">
+        <div className="container">
+          <p>Made with 💖 | Design and developed by <a href="https://iamnarugopal.in/" target="_blank">Naru Gopal</a></p>
+        </div>
+      </footer>
+    </>
   );
-}
+};
 
 export default App;
