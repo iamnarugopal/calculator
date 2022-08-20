@@ -80,15 +80,35 @@ ul {
   background-color: #ed5700;
   flex-basis: 50%;
 }
-.footer{
+.header {
+  padding: 15px 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+  text-align: center;
+}
+.header h1 {
+  color: #fff;
+  font-weight: bold;
+}
+.header img {
+  height: 35px;
+}
+.footer {
+  padding: 10px 0;
+
   position: absolute;
   bottom: 0;
-  width:100%;
-  left:0;
+  width: 100%;
+  left: 0;
   text-align: center;
   color: #fff;
 }
-.footer a{
+.footer p {
+  margin: 0;
+}
+.footer a {
   color: #fff;
   font-weight: bold;
   text-decoration: none;
