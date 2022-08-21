@@ -71,13 +71,15 @@ ul {
 }
 
 .calbotinn li:nth-child(3),
-.calbotinn li:nth-child(4),
-.calbotinn li:nth-child(8),
-.calbotinn li:nth-child(12),
-.calbotinn li:nth-child(16) {
+.calbotinn li:nth-child(7),
+.calbotinn li:nth-child(11),
+.calbotinn li:nth-child(15){
   background-color: #5e4bb6;
 }
-.calbotinn li:nth-child(19) {
+.calbotinn li:nth-child(1) {
+  flex-basis: 50%;
+}
+.calbotinn li:nth-child(18) {
   background-color: #ed5700;
   flex-basis: 50%;
 }

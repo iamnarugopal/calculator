@@ -52,7 +52,7 @@ const Calculator = () => {
   const char = [
     "C",
     "del",
-    "%",
+    // "%",
     "/",
     "7",
     "8",
