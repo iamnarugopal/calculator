@@ -46,13 +46,20 @@ const Calculator = () => {
     setValue("");
   };
   const calculate = (e) => {
-    setResult(eval(result).toString());
+    let inPersantage = value.includes("%");
+    if (inPersantage) {
+      let a = value.split("%");
+      let temp = ((a[1] / 100) * a[0]).toFixed(2);
+      setResult(temp);
+    } else {
+      setResult(eval(result).toFixed(2).toString());
+    }
   };
 
   const char = [
     "C",
     "del",
-    // "%",
+    "%",
     "/",
     "7",
     "8",
