@@ -1,13 +1,42 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 const Calculator = () => {
   const [value, setValue] = useState("");
   const [result, setResult] = useState("");
 
   const clickHandler = (e) => {
-    setResult(result.concat(e.target.value));
-    setValue(value.concat(e.target.value));
+    var v = e.target.value;
+    if (
+      v === "+" ||
+      v === "-" ||
+      v === "/" ||
+      v === "*" ||
+      v === "%" ||
+      v === "."
+    ) {
+      var str1 = value;
+      var last = value.charAt(value.length - 1);
+      if (
+        last === "+" ||
+        last === "-" ||
+        last === "/" ||
+        last === "*" ||
+        last === "." ||
+        last === "%"
+      ) {
+        var str2 = str1.slice(0, -1) + v;
+        setResult(str2);
+        setValue(str2);
+      } else {
+        setResult(result.concat(v));
+        setValue(value.concat(v));
+      }
+    } else {
+      setResult(result.concat(v));
+      setValue(value.concat(v));
+    }
   };
+
   const deleteLastValue = (e) => {
     setResult(result.slice(0, -1));
     setValue(result.slice(0, -1));
