@@ -1,7 +1,9 @@
 body {
   font-family: "Quicksand", sans-serif;
   background: #10495e;
-  padding-bottom: 50px;
+}
+#root{
+  height: 100vh;
 }
 ul {
   list-style: none;
@@ -93,8 +95,6 @@ ul {
   height: 35px;
 }
 .footer {
-  position: absolute;
-  bottom: 0;
   padding: 20px 0;
   text-align: center;
   color: #fff;
@@ -113,8 +113,24 @@ ul {
   body {
     padding: 0;
   }
-  .section_div {padding: 30px 0;}
+  .section_div {padding: 20px 0;}
   .footer {
     position: static;
   }
+}
+@media (max-width: 575px) {
+  .caltoptext1 {
+    min-height: 60px;
+    padding: 10px;
+}.caltop {
+  min-height: 100px;
+}
+.caltoptext2 {
+  padding: 10px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.calbotinn li input {
+  padding: 17px 0;
+}
 }

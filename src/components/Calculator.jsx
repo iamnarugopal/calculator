@@ -52,6 +52,7 @@ const Calculator = () => {
       let temp = ((a[1] / 100) * a[0]).toFixed(2);
       setResult(temp);
     } else {
+      // eslint-disable-next-line
       setResult(eval(result).toFixed(2).toString());
     }
   };
